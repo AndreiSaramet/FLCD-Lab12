@@ -1,0 +1,58 @@
+%{
+#include "y.tab.h"
+#include <ctype.h>
+
+char* upper(char *s);
+%}
+
+%option noyywrap
+
+id [a-zA-Z][a-zA-Z0-9]*
+int_const 0|[+-]?[1-9][0-9]*
+char_const '[a-zA-Z0-9+*/%<=> ,:()_.?!-]?'
+string_const \"[a-zA-Z0-9+*/%<=> ,:()_.?!-]*\"
+
+%%
+{char_const} {return CONST;}
+{string_const} {return CONST;}
+{int_const} {return CONST;}
+let {return LET;}
+integer {return INTEGER;}
+character {return CHARACTER;}
+string {return STRING;}
+read {return READ;}
+write {return WRITE;}
+if {return IF;}
+then {return THEN;}
+else {return ELSE;}
+and {return AND;}
+or {return OR;}
+not {return NOT;}
+is {return IS;}
+isnot {return ISNOT;}
+end {return END;}
+for {return FOR;}
+while {return WHILE;}
+do {return DO;}
+begin {return BEGIN_T;}
+"++" {return PP;}
+"--" {return MM;}
+"+=" {return PE;}
+"-=" {return ME;}
+"*=" {return TE;}
+"/=" {return DE;}
+"%=" {return MDE;}
+"<=" {return LE;}
+">=" {return GE;}
+"="|"+"|"-"|"*"|"/"|"%"|"<"|">" {return yytext[0];}
+":"|","|";"|"("|")"|"["|"]" {return yytext[0];}
+{id} {return ID;}
+[ \t\n]+
+%%
+
+char* upper(char* s) {
+	for(int i = 0; i < yyleng; i++) {
+		s[i] = (char) toupper(s[i]);
+	}
+	return s;
+}
