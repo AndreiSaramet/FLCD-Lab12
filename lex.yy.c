@@ -517,11 +517,8 @@ char *yytext;
 #line 1 "lang.lxi"
 #line 2 "lang.lxi"
 #include "y.tab.h"
-#include <ctype.h>
-
-char* upper(char *s);
-#line 523 "lex.yy.c"
-#line 524 "lex.yy.c"
+#line 520 "lex.yy.c"
+#line 521 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -738,9 +735,9 @@ YY_DECL
 		}
 
 	{
-#line 15 "lang.lxi"
+#line 12 "lang.lxi"
 
-#line 743 "lex.yy.c"
+#line 740 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -799,186 +796,186 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 16 "lang.lxi"
+#line 13 "lang.lxi"
 {return CONST;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 17 "lang.lxi"
+#line 14 "lang.lxi"
 {return CONST;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 18 "lang.lxi"
+#line 15 "lang.lxi"
 {return CONST;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 19 "lang.lxi"
+#line 16 "lang.lxi"
 {return LET;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 20 "lang.lxi"
+#line 17 "lang.lxi"
 {return INTEGER;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 21 "lang.lxi"
+#line 18 "lang.lxi"
 {return CHARACTER;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 22 "lang.lxi"
+#line 19 "lang.lxi"
 {return STRING;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 23 "lang.lxi"
+#line 20 "lang.lxi"
 {return READ;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 24 "lang.lxi"
+#line 21 "lang.lxi"
 {return WRITE;}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 25 "lang.lxi"
+#line 22 "lang.lxi"
 {return IF;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 26 "lang.lxi"
+#line 23 "lang.lxi"
 {return THEN;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 27 "lang.lxi"
+#line 24 "lang.lxi"
 {return ELSE;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 28 "lang.lxi"
+#line 25 "lang.lxi"
 {return AND;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 29 "lang.lxi"
+#line 26 "lang.lxi"
 {return OR;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 30 "lang.lxi"
+#line 27 "lang.lxi"
 {return NOT;}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 31 "lang.lxi"
+#line 28 "lang.lxi"
 {return IS;}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 32 "lang.lxi"
+#line 29 "lang.lxi"
 {return ISNOT;}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 33 "lang.lxi"
+#line 30 "lang.lxi"
 {return END;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 34 "lang.lxi"
+#line 31 "lang.lxi"
 {return FOR;}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 35 "lang.lxi"
+#line 32 "lang.lxi"
 {return WHILE;}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 36 "lang.lxi"
+#line 33 "lang.lxi"
 {return DO;}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 37 "lang.lxi"
+#line 34 "lang.lxi"
 {return BEGIN_T;}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 38 "lang.lxi"
+#line 35 "lang.lxi"
 {return PP;}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 39 "lang.lxi"
+#line 36 "lang.lxi"
 {return MM;}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 40 "lang.lxi"
+#line 37 "lang.lxi"
 {return PE;}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 41 "lang.lxi"
+#line 38 "lang.lxi"
 {return ME;}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 42 "lang.lxi"
+#line 39 "lang.lxi"
 {return TE;}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 43 "lang.lxi"
+#line 40 "lang.lxi"
 {return DE;}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 44 "lang.lxi"
+#line 41 "lang.lxi"
 {return MDE;}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 45 "lang.lxi"
+#line 42 "lang.lxi"
 {return LE;}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 46 "lang.lxi"
+#line 43 "lang.lxi"
 {return GE;}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 47 "lang.lxi"
+#line 44 "lang.lxi"
 {return yytext[0];}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 48 "lang.lxi"
+#line 45 "lang.lxi"
 {return yytext[0];}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 49 "lang.lxi"
+#line 46 "lang.lxi"
 {return ID;}
 	YY_BREAK
 case 35:
 /* rule 35 can match eol */
 YY_RULE_SETUP
-#line 50 "lang.lxi"
+#line 47 "lang.lxi"
 
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 51 "lang.lxi"
+#line 48 "lang.lxi"
 ECHO;
 	YY_BREAK
-#line 981 "lex.yy.c"
+#line 978 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1983,13 +1980,5 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 51 "lang.lxi"
-
-
-char* upper(char* s) {
-	for(int i = 0; i < yyleng; i++) {
-		s[i] = (char) toupper(s[i]);
-	}
-	return s;
-}
+#line 48 "lang.lxi"
 
