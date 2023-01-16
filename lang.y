@@ -205,6 +205,7 @@ yyerror(char *s) {
 extern FILE *yyin;
 int main(int argc, char **argv)
 {
+	new();
 	if (argc > 1) {
 		yyin = fopen(argv[1], "r");
 	} else {
@@ -213,6 +214,6 @@ int main(int argc, char **argv)
 	if (!yyparse()) {
 		printf("The production string is:\n");
 		print();
-	} 
-
+	}
+	delete();
 }
